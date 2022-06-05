@@ -37,3 +37,34 @@ x=2
 document.write("Initial value: "+x+".<br>")
 ++x
 document.write("Value after increment is: "+x+".")*/
+//Q#11, First Solution:
+var celsiusTemperture=39;
+var fahrenheitTemperature;
+fahrenheitTemperature=(celsiusTemperture*9/5)+32;
+document.write(celsiusTemperture+'\u00B0 C is '+fahrenheitTemperature+'\u00B0 F'+"<br>"); //"<br>" is only added so that the results of First and Second Solution appear on two different lines
+celsiusTemperture=(fahrenheitTemperature-32)*5/9;
+document.write(fahrenheitTemperature+'\u00B0 F is '+celsiusTemperture+'\u00B0 C <br>');
+//Q#11, Second Solution:
+celsiusTemperture=prompt("Please enter the temperature in Celsius: ");
+fahrenheitTemperature=(celsiusTemperture*9/5)+32;
+document.write(celsiusTemperture+'\u00B0 C is '+fahrenheitTemperature+'\u00B0 F<br>');
+//Q#12
+var USD=10;
+var SaudiRayals=25;
+var PKR;
+PKR=USD*155+SaudiRayals*41;
+document.write("Total Currency in PKR is "+PKR+"<br>")
+//Q#13
+var numberOne=prompt("Please enter a Number: ");
+var numberOnePrePlus;
+var numberOnePostPlus;
+document.write("Result:<br>");
+document.write("The value of a is: "+numberOne+"<br>"+".......................................<br>")
+numberOnePrePlus=++numberOne;
+document.write("The value of ++a is: "+numberOnePrePlus+"<br>"+"Now the value of a is "+numberOne+"<br>");
+numberOnePostPlus=numberOne++;
+document.write("The value of a++ is: "+numberOnePostPlus+"<br>"+"Now the value of a is "+numberOne+"<br>");
+//Q#14
+var a=2,b=1;
+var result=--a - --b + ++b + b--;
+document.write("a is: "+a+"<br>"+"b is: "+b+"<br>"+"result is: "+result);
